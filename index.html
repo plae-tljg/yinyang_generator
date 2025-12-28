@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阴阳怪气转换器</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎭 阴阳怪气转换器</h1>
+        <p class="subtitle">输入普通文字，转换成阴阳怪气的语气~</p>
+        
+        <div class="input-area">
+            <textarea id="inputText" placeholder="请输入您想要转换的文字，例如：你真厉害"></textarea>
+        </div>
+        
+        <div class="button-group">
+            <button class="btn" id="convertBtn">
+                <i class="fas fa-magic"></i> 转换阴阳怪气
+            </button>
+            <button class="btn btn-clear" id="clearBtn">
+                <i class="fas fa-eraser"></i> 清空
+            </button>
+        </div>
+        
+        <div class="output-area">
+            <span class="output-label">转换结果：</span>
+            <div class="output-text" id="outputText">哇~您可真是太厉害了呢~（配上绿茶表情）</div>
+        </div>
+        
+        <div class="emoji-buttons">
+            <button class="emoji-btn" data-emoji="😏">😏</button>
+            <button class="emoji-btn" data-emoji="🙄">🙄</button>
+            <button class="emoji-btn" data-emoji="😒">😒</button>
+            <button class="emoji-btn" data-emoji="😌">😌</button>
+            <button class="emoji-btn" data-emoji="🍵">🍵</button>
+            <button class="emoji-btn" data-emoji="💅">💅</button>
+        </div>
+        
+        <button class="btn btn-copy" id="copyBtn">
+            <i class="fas fa-copy"></i> 复制结果
+        </button>
+        
+        <div class="example">
+            <div class="example-title">💡 示例：</div>
+            <p><strong>输入：</strong>你真厉害</p>
+            <p><strong>输出：</strong>哇~您可真是太厉害了呢~（配上绿茶表情）</p>
+            <div class="example-item">
+                <p><strong>输入：</strong>好的</p>
+                <p><strong>输出：</strong>哦~这好的的也太明显了吧~（翻白眼）</p>
+            </div>
+            <div class="example-item">
+                <p><strong>输入：</strong>行</p>
+                <p><strong>输出：</strong>行行行，您说的都行~（敷衍地鼓掌）</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>✨ 专治各种不服，让您的阴阳怪气技能点满！✨</p>
+        </div>
+    </div>
+
+    <script src="public/js/app.js"></script>
+</body>
+</html>
